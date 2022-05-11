@@ -1,0 +1,17 @@
+{
+  "dev": {
+    "driver": "pg",
+    "user": { "ENV": "SQL_DATABASE_USER" },
+    "password": { "ENV": "SQL_DATABASE_PASSWORD" },
+    "host": { "ENV": "SQL_DATABASE_PASSWORD" },
+    "database": { "ENV": "SQL_DATABASE_DATABASE" },
+    "port": { "ENV": "SQL_DATABASE_PORT" },
+    "ssl": "true",
+    "schema": "public"
+  },
+  "mongo": {
+    "driver": "mongodb",
+    "database": "main",
+    "host": "localhost"
+  }
+}

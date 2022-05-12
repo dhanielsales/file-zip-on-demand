@@ -19,13 +19,9 @@
     "lib": ["esnext"],
     "sourceMap": true,
     "paths": {
-      "@api/*": ["api/*"],
-      "@app/*": ["app/*"],
-      "@model/*": ["model/*"],
-      "@store/*": ["store/*"],
-      "@comms/*": ["comms/*"],
-      "@shared/*": ["shared/*"],
-      "@service/*": ["service/*"]
+      "@client/*": ["client/*"],
+      "@worker/*": ["worker/*"],
+      "@shared/*": ["shared/*"]
     }
   },
   "include": ["src", "__tests__"]

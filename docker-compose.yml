@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build: .
+    expose:
+      - 4000
+    ports:
+      - "4000:4000"
+    command: sh -c "yarn && yarn worker:server"
+    volumes:
+      - "./:/usr/src/app"
+      - "reserved:/usr/src/app/node_modules"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 2000M
+volumes:
+  reserved: null

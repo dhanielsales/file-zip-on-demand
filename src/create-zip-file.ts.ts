@@ -3,12 +3,7 @@ import path from 'path';
 import fs from 'fs';
 import https from 'https';
 
-export interface FileSchema {
-  id: number;
-  name: string;
-  mimeType: string;
-  url: string;
-}
+import { FileSchema } from 'file-lists';
 
 export class CreateZipFile {
   private readonly outputFile: fs.WriteStream;

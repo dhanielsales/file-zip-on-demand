@@ -14,7 +14,7 @@ yarn-error.log*
 lerna-debug.log*
 
 # exclude everything
-src/worker/temp/*
+*/**/temp/*
 
 # exception to the rule
 !src/worker/temp/.gitkeep

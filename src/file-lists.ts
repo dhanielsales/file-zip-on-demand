@@ -1,4 +1,9 @@
-// ~ 150mb
+export interface FileSchema {
+  id: number;
+  name: string;
+  mimeType: string;
+  url: string;
+}
 
 export const oneLargeFile = [
   {
@@ -9,6 +14,7 @@ export const oneLargeFile = [
   },
 ];
 
+// ~ 150mb
 export const small = [
   {
     id: 1,

@@ -1,7 +1,6 @@
 # Yarn
 node_modules
 yarn-error.log
-yarn.lock
 
 # TypeScript dist
 dist/

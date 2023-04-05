@@ -1,28 +1,33 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "commonjs",
+    "module": "esnext",
     "allowJs": true,
-    "outDir": "./dist",
+    "outDir": "dist",
     "rootDir": "./src",
     "strict": true,
-    "strictPropertyInitialization": false,
+    "strictPropertyInitialization": true,
     "moduleResolution": "node",
     "baseUrl": "./src",
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "typeRoots": ["node_modules/@types", "src/@types"],
-    "lib": ["esnext"],
-    "sourceMap": true,
-    "paths": {
-      "@client/*": ["client/*"],
-      "@worker/*": ["worker/*"],
-      "@shared/*": ["shared/*"]
-    }
+    "typeRoots": [
+      "node_modules/@types",
+      "src/@types"
+    ],
+    "lib": [
+      "esnext"
+    ],
   },
-  "include": ["src", "__tests__"]
+  "include": [
+    "src",
+    "__tests__"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

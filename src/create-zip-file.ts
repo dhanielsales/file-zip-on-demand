@@ -76,6 +76,7 @@ export class CreateZipFile {
 
     return `${fileNameWithoutExtension.replace(/\s+/, '_')}.${fileExtension}`;
   }
+
   private *sliceInChunks(files: FileSchema[], chunkSize: number): Generator<FileSchema[]> {
     for (let i = 0; i < files.length; i += chunkSize) {
       yield files.slice(i, i + chunkSize);

@@ -4,7 +4,7 @@ import express, { Router, Request, Response, NextFunction } from 'express';
 import { format } from 'date-fns';
 import { nanoid } from 'nanoid';
 
-import { CreateZipFile } from './create-zip-file.ts';
+import { CreateZipFile } from './create-zip-file';
 import { small, medium, large, extraLarge, oneLargeFile, FileSchema } from './file-lists';
 
 // Setup Server

@@ -50,9 +50,8 @@ async function handleRequest(
   });
 
   fileStream.on('end', async () => {
-    await zipFile.destroy();
     console.log('Ended process with key:', zipFileName);
-    console.timeEnd(zipFileName);
+    response.end();
   });
 
   fileStream.on('error', err => {
@@ -86,4 +85,4 @@ router.get('/oneLargeFile', async (request, response, next) => {
 app.use('/create-zip', router);
 
 // Start Server
-app.listen(4000, () => console.log('Server started on port 4000'));
+app.listen(3002, () => console.log('Server started on port 3002'));
